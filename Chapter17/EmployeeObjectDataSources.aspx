@@ -12,7 +12,7 @@
         <h3>ObjectDataSource using a DataReader</h3>
         <asp:GridView ID="gvEmployeeFromDataReader" runat="server" DataSourceID="odsEmployeeFromDataReader"></asp:GridView>
         <asp:ObjectDataSource ID="odsEmployeeFromDataReader" runat="server" OldValuesParameterFormatString="original_{0}" SelectMethod="getEmployee" TypeName="EmployeeDataReader"></asp:ObjectDataSource>
-        <h3>OnjectDataSource using a DataSet</h3>
+        <h3>ObjectDataSource using a DataSet</h3>
         <asp:GridView ID="gvEmployeeFromDataSet" runat="server" DataKeyNames="EmployeeID" DataSourceID="odsEmployeeFromDataSet" OnRowUpdated="gvEmployeeFromDataSet_RowUpdated">
             <Columns>
                 <asp:CommandField ShowEditButton="True" />
